@@ -1,0 +1,385 @@
+!SESSION 2015-09-01 09:33:39.412 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-09-01 09:36:09.608
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\skrylova'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-09-01 10:40:02.803 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-09-01 10:42:41.320
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\skrylova'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-09-01 10:49:24.597 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data file:/D:/skrylova/tests/test-java-25-spkrylova/ -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-09-01 10:50:43.748
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\skrylova'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.testng.eclipse 1 0 2015-09-01 18:30:26.025
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] GroupCreationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import java.util.regex.Pattern
+  import java.util.concurrent.TimeUnit
+  import org.junit.Assert.*
+  import org.hamcrest.CoreMatchers.*
+  import org.openqa.selenium.*
+  import org.openqa.selenium.firefox.FirefoxDriver
+  import org.openqa.selenium.support.ui.Select
+  import org.testng.annotations.AfterClass
+  import org.testng.annotations.BeforeClass
+  import org.testng.annotations.Test
+  class GroupCreationTests
+    WebDriver driver
+    String baseUrl
+    boolean acceptNextAlert
+    StringBuffer verificationErrors
+    void setUp()
+    void testNonEmptyGroupCreation()
+    void testEmptyGroupCreation()
+    void returnToGroupsPage()
+    void submitGroupCreation()
+    void fillGroupForm(GroupData)
+    void initGroupCreation()
+    void gotoGroupsPage()
+    void openMainPage()
+    void tearDown()
+    boolean isElementPresent(By)
+    boolean isAlertPresent()
+    String closeAlertAndGetItsText()
+
+!ENTRY org.testng.eclipse 1 0 2015-09-01 18:30:28.659
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 64665 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse--1011454487\testng-customsuite.xml
+java -ea -classpath D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin:C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 64665 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse--1011454487\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-01 18:36:11.569
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com.example.tests [in src [in addressbook-selenium-tests]]
+  [Working copy] GroupCreationTests.java
+    package com.example.tests
+    import java.util.regex.Pattern
+    import java.util.concurrent.TimeUnit
+    import org.junit.Assert.*
+    import org.hamcrest.CoreMatchers.*
+    import org.openqa.selenium.*
+    import org.openqa.selenium.firefox.FirefoxDriver
+    import org.openqa.selenium.support.ui.Select
+    import org.testng.annotations.AfterClass
+    import org.testng.annotations.BeforeClass
+    import org.testng.annotations.Test
+    class GroupCreationTests
+      WebDriver driver
+      String baseUrl
+      boolean acceptNextAlert
+      StringBuffer verificationErrors
+      void setUp()
+      void testNonEmptyGroupCreation()
+      void testEmptyGroupCreation()
+      void returnToGroupsPage()
+      void submitGroupCreation()
+      void fillGroupForm(GroupData)
+      void initGroupCreation()
+      void gotoGroupsPage()
+      void openMainPage()
+      void tearDown()
+      boolean isElementPresent(By)
+      boolean isAlertPresent()
+      String closeAlertAndGetItsText()
+  [Working copy] GroupData.java
+    package com.example.tests
+    class GroupData
+      String name
+      String header
+      String footer
+      GroupData()
+      GroupData(String, String, String)
+  AlsoGroupCreationTests.java
+    package com.example.tests
+    import java.util.regex.Pattern
+    import java.util.concurrent.TimeUnit
+    import org.junit.Assert.*
+    import org.hamcrest.CoreMatchers.*
+    import org.openqa.selenium.*
+    import org.openqa.selenium.firefox.FirefoxDriver
+    import org.openqa.selenium.support.ui.Select
+    import org.testng.annotations.AfterClass
+    import org.testng.annotations.BeforeClass
+    import org.testng.annotations.Test
+    class AlsoGroupCreationTests
+      WebDriver driver
+      String baseUrl
+      boolean acceptNextAlert
+      StringBuffer verificationErrors
+      void setUp()
+      void testNonEmptyGroupCreation()
+      void testEmptyGroupCreation()
+      void returnToGroupsPage()
+      void submitGroupCreation()
+      void fillGroupForm(GroupData)
+      void initGroupCreation()
+      void gotoGroupsPage()
+      void openMainPage()
+      void tearDown()
+      boolean isElementPresent(By)
+      boolean isAlertPresent()
+      String closeAlertAndGetItsText()
+
+!ENTRY org.testng.eclipse 1 0 2015-09-01 18:36:11.707
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 64788 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse--1843993099\testng-customsuite.xml
+java -ea -classpath D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin:C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 64788 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse--1843993099\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-01 18:54:44.595
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com.example.tests [in src [in addressbook-selenium-tests]]
+  [Working copy] TestBase.java
+    package com.example.tests
+    import org.junit.Assert.fail
+    import java.util.concurrent.TimeUnit
+    import org.openqa.selenium.Alert
+    import org.openqa.selenium.By
+    import org.openqa.selenium.NoAlertPresentException
+    import org.openqa.selenium.NoSuchElementException
+    import org.openqa.selenium.WebDriver
+    import org.openqa.selenium.firefox.FirefoxDriver
+    import org.testng.annotations.AfterClass
+    import org.testng.annotations.AfterTest
+    import org.testng.annotations.BeforeClass
+    import org.testng.annotations.BeforeTest
+    class TestBase
+      WebDriver driver
+      String baseUrl
+      boolean acceptNextAlert
+      StringBuffer verificationErrors
+      void setUp()
+      void tearDown()
+      void returnToGroupsPage()
+      void submitGroupCreation()
+      void fillGroupForm(GroupData)
+      void initGroupCreation()
+      void gotoGroupsPage()
+      void openMainPage()
+      boolean isElementPresent(By)
+      boolean isAlertPresent()
+      String closeAlertAndGetItsText()
+  [Working copy] GroupCreationTests.java
+    package com.example.tests
+    import java.util.regex.Pattern
+    class GroupCreationTests
+      void testNonEmptyGroupCreation()
+      void testEmptyGroupCreation()
+  [Working copy] GroupData.java
+    package com.example.tests
+    class GroupData
+      String name
+      String header
+      String footer
+      GroupData()
+      GroupData(String, String, String)
+  [Working copy] AlsoGroupCreationTests.java
+    package com.example.tests
+    import java.util.regex.Pattern
+    import java.util.concurrent.TimeUnit
+    import org.junit.Assert.*
+    import org.hamcrest.CoreMatchers.*
+    import org.openqa.selenium.*
+    import org.openqa.selenium.firefox.FirefoxDriver
+    import org.openqa.selenium.support.ui.Select
+    import org.testng.annotations.AfterClass
+    import org.testng.annotations.BeforeClass
+    import org.testng.annotations.Test
+    class AlsoGroupCreationTests
+      WebDriver driver
+      String baseUrl
+      boolean acceptNextAlert
+      StringBuffer verificationErrors
+      void testNonEmptyGroupCreation()
+      void testEmptyGroupCreation()
+
+!ENTRY org.testng.eclipse 1 0 2015-09-01 18:54:57.431
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 64988 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse--1384965759\testng-customsuite.xml
+java -ea -classpath D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin:C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 64988 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse--1384965759\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-01 18:59:01.059
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com.example.tests [in src [in addressbook-selenium-tests]]
+  [Working copy] TestBase.java
+    package com.example.tests
+    import org.junit.Assert.fail
+    import java.util.concurrent.TimeUnit
+    import org.openqa.selenium.Alert
+    import org.openqa.selenium.By
+    import org.openqa.selenium.NoAlertPresentException
+    import org.openqa.selenium.NoSuchElementException
+    import org.openqa.selenium.WebDriver
+    import org.openqa.selenium.firefox.FirefoxDriver
+    import org.testng.annotations.AfterClass
+    import org.testng.annotations.AfterTest
+    import org.testng.annotations.BeforeClass
+    import org.testng.annotations.BeforeTest
+    class TestBase
+      WebDriver driver
+      String baseUrl
+      boolean acceptNextAlert
+      StringBuffer verificationErrors
+      void setUp()
+      void tearDown()
+      void returnToGroupsPage()
+      void submitGroupCreation()
+      void fillGroupForm(GroupData)
+      void initGroupCreation()
+      void gotoGroupsPage()
+      void openMainPage()
+      boolean isElementPresent(By)
+      boolean isAlertPresent()
+      String closeAlertAndGetItsText()
+  [Working copy] GroupCreationTests.java
+    package com.example.tests
+    import java.util.regex.Pattern
+    import org.testng.annotations.Test
+    class GroupCreationTests
+      void testNonEmptyGroupCreation()
+      void testEmptyGroupCreation()
+  [Working copy] GroupData.java
+    package com.example.tests
+    class GroupData
+      String name
+      String header
+      String footer
+      GroupData()
+      GroupData(String, String, String)
+  [Working copy] AlsoGroupCreationTests.java
+    package com.example.tests
+    import java.util.regex.Pattern
+    import java.util.concurrent.TimeUnit
+    import org.junit.Assert.*
+    import org.hamcrest.CoreMatchers.*
+    import org.openqa.selenium.*
+    import org.openqa.selenium.firefox.FirefoxDriver
+    import org.openqa.selenium.support.ui.Select
+    import org.testng.annotations.AfterClass
+    import org.testng.annotations.BeforeClass
+    import org.testng.annotations.Test
+    class AlsoGroupCreationTests
+      WebDriver driver
+      String baseUrl
+      boolean acceptNextAlert
+      StringBuffer verificationErrors
+      void testNonEmptyGroupCreation()
+      void testEmptyGroupCreation()
+
+!ENTRY org.testng.eclipse 1 0 2015-09-01 18:59:02.992
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 65092 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse--608787142\testng-customsuite.xml
+java -ea -classpath D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin:C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 65092 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse--608787142\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-01 19:02:16.493
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com.example.tests [in src [in addressbook-selenium-tests]]
+  [Working copy] TestBase.java
+    package com.example.tests
+    import org.junit.Assert.fail
+    import java.util.concurrent.TimeUnit
+    import org.openqa.selenium.Alert
+    import org.openqa.selenium.By
+    import org.openqa.selenium.NoAlertPresentException
+    import org.openqa.selenium.NoSuchElementException
+    import org.openqa.selenium.WebDriver
+    import org.openqa.selenium.firefox.FirefoxDriver
+    import org.testng.annotations.AfterClass
+    import org.testng.annotations.AfterTest
+    import org.testng.annotations.BeforeClass
+    import org.testng.annotations.BeforeTest
+    class TestBase
+      WebDriver driver
+      String baseUrl
+      boolean acceptNextAlert
+      StringBuffer verificationErrors
+      void setUp()
+      void tearDown()
+      void returnToGroupsPage()
+      void submitGroupCreation()
+      void fillGroupForm(GroupData)
+      void initGroupCreation()
+      void gotoGroupsPage()
+      void openMainPage()
+      boolean isElementPresent(By)
+      boolean isAlertPresent()
+      String closeAlertAndGetItsText()
+  [Working copy] GroupCreationTests.java
+    package com.example.tests
+    import java.util.regex.Pattern
+    import org.testng.annotations.Test
+    class GroupCreationTests
+      void testNonEmptyGroupCreation()
+      void testEmptyGroupCreation()
+  [Working copy] GroupData.java
+    package com.example.tests
+    class GroupData
+      String name
+      String header
+      String footer
+      GroupData()
+      GroupData(String, String, String)
+  [Working copy] AlsoGroupCreationTests.java
+    package com.example.tests
+    import java.util.regex.Pattern
+    import java.util.concurrent.TimeUnit
+    import org.junit.Assert.*
+    import org.hamcrest.CoreMatchers.*
+    import org.openqa.selenium.*
+    import org.openqa.selenium.firefox.FirefoxDriver
+    import org.openqa.selenium.support.ui.Select
+    import org.testng.annotations.AfterClass
+    import org.testng.annotations.BeforeClass
+    import org.testng.annotations.Test
+    class AlsoGroupCreationTests
+      WebDriver driver
+      String baseUrl
+      boolean acceptNextAlert
+      StringBuffer verificationErrors
+      void testNonEmptyGroupCreation()
+      void testEmptyGroupCreation()
+
+!ENTRY org.testng.eclipse 1 0 2015-09-01 19:02:21.630
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 65187 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse--1328207933\testng-customsuite.xml
+java -ea -classpath D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin:C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 65187 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse--1328207933\testng-customsuite.xml
