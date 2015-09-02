@@ -383,3 +383,1110 @@ java -ea -classpath D:\skrylova\tests\test-java-25-spkrylova\addressbook-seleniu
   Class:     org.testng.remote.RemoteTestNG
   Args:      -serport 65187 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse--1328207933\testng-customsuite.xml
 java -ea -classpath D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin:C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 65187 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse--1328207933\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 11:58:52.565
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import java.util.regex.Pattern
+  import java.util.concurrent.TimeUnit
+  import org.junit.*
+  import org.junit.Assert.*
+  import org.hamcrest.CoreMatchers.*
+  import org.openqa.selenium.*
+  import org.openqa.selenium.firefox.FirefoxDriver
+  import org.openqa.selenium.support.ui.Select
+  class ContactCreationTests
+    WebDriver driver
+    String baseUrl
+    boolean acceptNextAlert
+    StringBuffer verificationErrors
+    void setUp()
+    void testNonEmptyContactCreation()
+    void testEmptyContactCreation()
+    void openMainPage2()
+    void submitContactCreation()
+    void fillAddNewPage(String, String, String, String, String, String)
+    void gotoAddNewPage()
+    void tearDown()
+    boolean isElementPresent(By)
+    boolean isAlertPresent()
+    String closeAlertAndGetItsText()
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 11:58:52.664
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 52908 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse--503048537\testng-customsuite.xml
+java -ea -classpath D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin:C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 52908 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse--503048537\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 11:59:19.082
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import java.util.regex.Pattern
+  import java.util.concurrent.TimeUnit
+  import org.junit.*
+  import org.junit.Assert.*
+  import org.hamcrest.CoreMatchers.*
+  import org.openqa.selenium.*
+  import org.openqa.selenium.firefox.FirefoxDriver
+  import org.openqa.selenium.support.ui.Select
+  class ContactCreationTests
+    WebDriver driver
+    String baseUrl
+    boolean acceptNextAlert
+    StringBuffer verificationErrors
+    void setUp()
+    void testNonEmptyContactCreation()
+    void testEmptyContactCreation()
+    void openMainPage2()
+    void submitContactCreation()
+    void fillAddNewPage(String, String, String, String, String, String)
+    void gotoAddNewPage()
+    void tearDown()
+    boolean isElementPresent(By)
+    boolean isAlertPresent()
+    String closeAlertAndGetItsText()
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 11:59:19.165
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 52910 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse-689885947\testng-customsuite.xml
+java -ea -classpath D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin:C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 52910 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse-689885947\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 13:56:33.187
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import java.util.regex.Pattern
+  import java.util.concurrent.TimeUnit
+  import org.hamcrest.CoreMatchers.*
+  import org.openqa.selenium.*
+  import org.openqa.selenium.firefox.FirefoxDriver
+  import org.openqa.selenium.support.ui.Select
+  import org.testng.annotations.AfterClass
+  import org.testng.annotations.AfterTest
+  import org.testng.annotations.BeforeClass
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  class ContactCreationTests
+    WebDriver driver
+    String baseUrl
+    boolean acceptNextAlert
+    StringBuffer verificationErrors
+    void setUp()
+    void testNonEmptyContactCreation()
+    void testEmptyContactCreation()
+    void openMainPage2()
+    void submitContactCreation()
+    void fillAddNewPage(ContactData)
+    void gotoAddNewPage()
+    void tearDown()
+    boolean isElementPresent(By)
+    boolean isAlertPresent()
+    String closeAlertAndGetItsText()
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 13:58:08.605
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import java.util.regex.Pattern
+  import java.util.concurrent.TimeUnit
+  import org.hamcrest.CoreMatchers.*
+  import org.openqa.selenium.*
+  import org.openqa.selenium.firefox.FirefoxDriver
+  import org.openqa.selenium.support.ui.Select
+  import org.testng.annotations.AfterClass
+  import org.testng.annotations.AfterTest
+  import org.testng.annotations.BeforeClass
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  class ContactCreationTests
+    WebDriver driver
+    String baseUrl
+    boolean acceptNextAlert
+    StringBuffer verificationErrors
+    void setUp()
+    void testNonEmptyContactCreation()
+    void testEmptyContactCreation()
+    void openMainPage2()
+    void submitContactCreation()
+    void fillAddNewPage(ContactData)
+    void gotoAddNewPage()
+    void tearDown()
+    boolean isElementPresent(By)
+    boolean isAlertPresent()
+    String closeAlertAndGetItsText()
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 13:58:10.460
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 54171 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse--104265384\testng-customsuite.xml
+java -ea -classpath D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin:C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 54171 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse--104265384\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 14:07:28.407
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import java.util.regex.Pattern
+  import java.util.concurrent.TimeUnit
+  import org.hamcrest.CoreMatchers.*
+  import org.openqa.selenium.*
+  import org.openqa.selenium.firefox.FirefoxDriver
+  import org.openqa.selenium.support.ui.Select
+  import org.testng.annotations.AfterClass
+  import org.testng.annotations.AfterTest
+  import org.testng.annotations.BeforeClass
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  class ContactCreationTests
+    WebDriver driver
+    String baseUrl
+    boolean acceptNextAlert
+    StringBuffer verificationErrors
+    void setUp()
+    void testNonEmptyContactCreation()
+    void testEmptyContactCreation()
+    void openMainPage2()
+    void submitContactCreation()
+    void fillAddNewPage(ContactData)
+    void gotoAddNewPage()
+    void tearDown()
+    boolean isElementPresent(By)
+    boolean isAlertPresent()
+    String closeAlertAndGetItsText()
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 14:07:30.276
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 54286 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse--575769966\testng-customsuite.xml
+java -ea -classpath D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin:C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 54286 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse--575769966\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 14:33:02.587
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] GroupCreationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import java.util.regex.Pattern
+  import org.testng.annotations.Test
+  class GroupCreationTests
+    void testNonEmptyGroupCreation()
+    void testEmptyGroupCreation()
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 14:33:04.185
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 54463 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse--1665388718\testng-customsuite.xml
+java -ea -classpath D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin:C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 54463 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse--1665388718\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 14:34:34.584
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] GroupCreationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import java.util.regex.Pattern
+  import org.testng.annotations.Test
+  class GroupCreationTests
+    void testNonEmptyGroupCreation()
+    void testEmptyGroupCreation()
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 14:34:36.239
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 54510 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse-1219228672\testng-customsuite.xml
+java -ea -classpath D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin:C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 54510 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse-1219228672\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 14:35:56.600
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import java.util.regex.Pattern
+  import java.util.concurrent.TimeUnit
+  import org.hamcrest.CoreMatchers.*
+  import org.openqa.selenium.*
+  import org.openqa.selenium.firefox.FirefoxDriver
+  import org.openqa.selenium.support.ui.Select
+  import org.testng.annotations.AfterClass
+  import org.testng.annotations.AfterTest
+  import org.testng.annotations.BeforeClass
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  class ContactCreationTests
+    WebDriver driver
+    String baseUrl
+    boolean acceptNextAlert
+    StringBuffer verificationErrors
+    void setUp()
+    void testNonEmptyContactCreation()
+    void testEmptyContactCreation()
+    void openMainPage2()
+    void submitContactCreation()
+    void fillAddNewPage(ContactData)
+    void gotoAddNewPage()
+    void tearDown()
+    boolean isElementPresent(By)
+    boolean isAlertPresent()
+    String closeAlertAndGetItsText()
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 14:35:56.685
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 54590 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse--1075105640\testng-customsuite.xml
+java -ea -classpath D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin:C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 54590 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse--1075105640\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 14:40:13.527
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import java.util.regex.Pattern
+  import java.util.concurrent.TimeUnit
+  import org.hamcrest.CoreMatchers.*
+  import org.openqa.selenium.*
+  import org.openqa.selenium.firefox.FirefoxDriver
+  import org.openqa.selenium.support.ui.Select
+  import org.testng.annotations.AfterClass
+  import org.testng.annotations.AfterTest
+  import org.testng.annotations.BeforeClass
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  class ContactCreationTests
+    WebDriver driver
+    String baseUrl
+    boolean acceptNextAlert
+    StringBuffer verificationErrors
+    void setUp()
+    void testNonEmptyContactCreation()
+    void testEmptyContactCreation()
+    void openMainPage2()
+    void submitContactCreation()
+    void fillAddNewPage(ContactData)
+    void gotoAddNewPage()
+    void tearDown()
+    boolean isElementPresent(By)
+    boolean isAlertPresent()
+    String closeAlertAndGetItsText()
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 14:40:15.000
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 54655 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse-1684281179\testng-customsuite.xml
+java -ea -classpath D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin:C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 54655 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse-1684281179\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 14:41:45.483
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import java.util.regex.Pattern
+  import java.util.concurrent.TimeUnit
+  import org.hamcrest.CoreMatchers.*
+  import org.openqa.selenium.*
+  import org.openqa.selenium.firefox.FirefoxDriver
+  import org.openqa.selenium.support.ui.Select
+  import org.testng.annotations.AfterClass
+  import org.testng.annotations.AfterTest
+  import org.testng.annotations.BeforeClass
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  class ContactCreationTests
+    WebDriver driver
+    String baseUrl
+    boolean acceptNextAlert
+    StringBuffer verificationErrors
+    void setUp()
+    void testNonEmptyContactCreation()
+    void testEmptyContactCreation()
+    void openMainPage2()
+    void submitContactCreation()
+    void fillAddNewPage(ContactData)
+    void gotoAddNewPage()
+    void tearDown()
+    boolean isElementPresent(By)
+    boolean isAlertPresent()
+    String closeAlertAndGetItsText()
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 14:41:45.529
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 54690 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse-149022509\testng-customsuite.xml
+java -ea -classpath D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin:C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 54690 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse-149022509\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 14:46:10.283
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import java.util.regex.Pattern
+  import java.util.concurrent.TimeUnit
+  import org.hamcrest.CoreMatchers.*
+  import org.openqa.selenium.*
+  import org.openqa.selenium.firefox.FirefoxDriver
+  import org.openqa.selenium.support.ui.Select
+  import org.testng.annotations.AfterClass
+  import org.testng.annotations.AfterTest
+  import org.testng.annotations.BeforeClass
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  class ContactCreationTests
+    WebDriver driver
+    String baseUrl
+    boolean acceptNextAlert
+    StringBuffer verificationErrors
+    void setUp()
+    void testNonEmptyContactCreation()
+    void testEmptyContactCreation()
+    void openMainPage2()
+    void submitContactCreation()
+    void fillAddNewPage(ContactData)
+    void gotoAddNewPage()
+    void tearDown()
+    boolean isElementPresent(By)
+    boolean isAlertPresent()
+    String closeAlertAndGetItsText()
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 14:46:12.033
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 54706 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse--1686443759\testng-customsuite.xml
+java -ea -classpath D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin:C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 54706 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse--1686443759\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 15:39:11.557
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import java.util.regex.Pattern
+  import org.hamcrest.CoreMatchers.*
+  import org.openqa.selenium.*
+  import org.testng.annotations.AfterTest
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  class ContactCreationTests
+    void testNonEmptyContactCreation()
+    void testEmptyContactCreation()
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 15:39:13.891
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 54980 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse-58050667\testng-customsuite.xml
+java -ea -classpath D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin:C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 54980 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse-58050667\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 15:39:40.222
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] GroupCreationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import java.util.regex.Pattern
+  import org.testng.annotations.Test
+  class GroupCreationTests
+    void testNonEmptyGroupCreation()
+    void testEmptyGroupCreation()
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 15:39:40.320
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55082 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse--2037245871\testng-customsuite.xml
+java -ea -classpath D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin:C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 55082 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse--2037245871\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 15:41:42.114
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class ContactCreationTests
+    void testNonEmptyContactCreation()
+    void testEmptyContactCreation()
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 15:41:43.382
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55166 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse-32904071\testng-customsuite.xml
+java -ea -classpath D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin:C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 55166 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse-32904071\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 15:42:22.427
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class ContactCreationTests
+    void testNonEmptyContactCreation()
+    void testEmptyContactCreation()
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 15:42:31.251
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55268 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse--1550524832\testng-customsuite.xml
+java -ea -classpath D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin:C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 55268 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse--1550524832\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 15:43:21.213
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class ContactCreationTests
+    void testNonEmptyContactCreation()
+    void testEmptyContactCreation()
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 15:43:22.762
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55370 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse--1539074310\testng-customsuite.xml
+java -ea -classpath D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin:C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 55370 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse--1539074310\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 15:48:15.823
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class ContactCreationTests
+    void testNonEmptyContactCreation()
+    void testEmptyContactCreation()
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 15:48:17.241
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55388 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse-1135344298\testng-customsuite.xml
+java -ea -classpath D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin:C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 55388 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse-1135344298\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 15:51:31.117
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class ContactCreationTests
+    void testNonEmptyContactCreation()
+    void testEmptyContactCreation()
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 15:51:49.134
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class ContactCreationTests
+    void testNonEmptyContactCreation()
+    void testEmptyContactCreation()
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 15:51:50.353
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55406 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse-833222822\testng-customsuite.xml
+java -ea -classpath D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin:C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 55406 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse-833222822\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 15:55:07.242
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class ContactCreationTests
+    void testEmptyContactCreation()
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 15:55:08.603
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55447 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse-549140740\testng-customsuite.xml
+java -ea -classpath D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin:C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 55447 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse-549140740\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 16:05:09.198
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class ContactCreationTests
+    void testEmptyContactCreation()
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 16:05:22.852
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55473 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse--368980694\testng-customsuite.xml
+java -ea -classpath D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin:C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 55473 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse--368980694\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 16:06:50.376
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class ContactCreationTests
+    void testNonEmptyContactCreation()
+    void testEmptyContactCreation()
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 16:07:16.920
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactCreationTests.java [in com.example.tests [in src [in addressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class ContactCreationTests
+    void testNonEmptyContactCreation()
+    void testEmptyContactCreation()
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 16:07:18.591
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55534 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse-120990190\testng-customsuite.xml
+java -ea -classpath D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin:C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 55534 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse-120990190\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 16:27:53.398
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com.example.tests [in src [in addressbook-selenium-tests]]
+  [Working copy] TestBase.java
+    package com.example.tests
+    import org.junit.Assert.fail
+    import java.util.concurrent.TimeUnit
+    import org.openqa.selenium.Alert
+    import org.openqa.selenium.By
+    import org.openqa.selenium.NoAlertPresentException
+    import org.openqa.selenium.NoSuchElementException
+    import org.openqa.selenium.WebDriver
+    import org.openqa.selenium.firefox.FirefoxDriver
+    import org.openqa.selenium.support.ui.Select
+    import org.testng.annotations.AfterClass
+    import org.testng.annotations.AfterTest
+    import org.testng.annotations.BeforeClass
+    import org.testng.annotations.BeforeTest
+    class TestBase
+      WebDriver driver
+      String baseUrl
+      boolean acceptNextAlert
+      StringBuffer verificationErrors
+      void submitContactCreation()
+      void setUp()
+      void tearDown()
+      void returnToGroupsPage()
+      void submitGroupCreation()
+      void fillGroupForm(GroupData)
+      void initGroupCreation()
+      void gotoGroupsPage()
+      void openMainPage()
+      void openMainPage2()
+      boolean isElementPresent(By)
+      String closeAlertAndGetItsText()
+      void fillAddNewPage(ContactData)
+      void gotoAddNewPage()
+      boolean isAlertPresent()
+  [Working copy] GroupCreationTests.java
+    package com.example.tests
+    import java.util.regex.Pattern
+    import org.testng.annotations.Test
+    class GroupCreationTests
+      void testNonEmptyGroupCreation()
+      void testEmptyGroupCreation()
+  [Working copy] ContactCreationTests.java
+    package com.example.tests
+    import org.testng.annotations.Test
+    class ContactCreationTests
+      void testNonEmptyContactCreation()
+      void testEmptyContactCreation()
+  [Working copy] GroupData.java
+    package com.example.tests
+    class GroupData
+      String name
+      String header
+      String footer
+      GroupData()
+      GroupData(String, String, String)
+  [Working copy] AlsoGroupCreationTests.java
+    package com.example.tests
+    import java.util.regex.Pattern
+    import java.util.concurrent.TimeUnit
+    import org.junit.Assert.*
+    import org.hamcrest.CoreMatchers.*
+    import org.openqa.selenium.*
+    import org.openqa.selenium.firefox.FirefoxDriver
+    import org.openqa.selenium.support.ui.Select
+    import org.testng.annotations.AfterClass
+    import org.testng.annotations.BeforeClass
+    import org.testng.annotations.Test
+    class AlsoGroupCreationTests
+      void testNonEmptyGroupCreation()
+      void testEmptyGroupCreation()
+  [Working copy] ContactData.java
+    package com.example.tests
+    class ContactData
+      String lastname
+      String firstname
+      String mobile
+      String bday_day
+      String bday_month
+      String bday_year
+      ContactData()
+      ContactData(String, String, String, String, String, String)
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 16:27:53.515
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55663 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse-673647786\testng-customsuite.xml
+java -ea -classpath D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin:C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 55663 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse-673647786\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 16:35:00.378
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com.example.tests [in src [in addressbook-selenium-tests]]
+  [Working copy] TestBase.java
+    package com.example.tests
+    import org.junit.Assert.fail
+    import java.util.concurrent.TimeUnit
+    import org.openqa.selenium.Alert
+    import org.openqa.selenium.By
+    import org.openqa.selenium.NoAlertPresentException
+    import org.openqa.selenium.NoSuchElementException
+    import org.openqa.selenium.WebDriver
+    import org.openqa.selenium.firefox.FirefoxDriver
+    import org.openqa.selenium.support.ui.Select
+    import org.testng.annotations.AfterClass
+    import org.testng.annotations.AfterTest
+    import org.testng.annotations.BeforeClass
+    import org.testng.annotations.BeforeTest
+    class TestBase
+      WebDriver driver
+      String baseUrl
+      boolean acceptNextAlert
+      StringBuffer verificationErrors
+      void submitContactCreation()
+      void setUp()
+      void tearDown()
+      void returnToGroupsPage()
+      void submitGroupCreation()
+      void fillGroupForm(GroupData)
+      void initGroupCreation()
+      void gotoGroupsPage()
+      void openMainPage()
+      void openMainPage2()
+      boolean isElementPresent(By)
+      String closeAlertAndGetItsText()
+      void fillAddNewPage(ContactData)
+      void gotoAddNewPage()
+      boolean isAlertPresent()
+  [Working copy] GroupCreationTests.java
+    package com.example.tests
+    import java.util.regex.Pattern
+    import org.testng.annotations.Test
+    class GroupCreationTests
+      void testNonEmptyGroupCreation()
+      void testEmptyGroupCreation()
+  [Working copy] ContactCreationTests.java
+    package com.example.tests
+    import org.testng.annotations.Test
+    class ContactCreationTests
+      void testNonEmptyContactCreation()
+      void testEmptyContactCreation()
+  [Working copy] GroupData.java
+    package com.example.tests
+    class GroupData
+      String name
+      String header
+      String footer
+      GroupData()
+      GroupData(String, String, String)
+  [Working copy] AlsoGroupCreationTests.java
+    package com.example.tests
+    import java.util.regex.Pattern
+    import java.util.concurrent.TimeUnit
+    import org.junit.Assert.*
+    import org.hamcrest.CoreMatchers.*
+    import org.openqa.selenium.*
+    import org.openqa.selenium.firefox.FirefoxDriver
+    import org.openqa.selenium.support.ui.Select
+    import org.testng.annotations.AfterClass
+    import org.testng.annotations.BeforeClass
+    import org.testng.annotations.Test
+    class AlsoGroupCreationTests
+      void testNonEmptyGroupCreation()
+      void testEmptyGroupCreation()
+  [Working copy] ContactData.java
+    package com.example.tests
+    class ContactData
+      String lastname
+      String firstname
+      String mobile
+      String bday_day
+      String bday_month
+      String bday_year
+      ContactData()
+      ContactData(String, String, String, String, String, String)
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 16:35:00.513
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55988 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse--313264912\testng-customsuite.xml
+java -ea -classpath D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin:C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 55988 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse--313264912\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 16:39:33.266
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com.example.tests [in src [in addressbook-selenium-tests]]
+  [Working copy] TestBase.java
+    package com.example.tests
+    import org.junit.Assert.fail
+    import java.util.concurrent.TimeUnit
+    import org.openqa.selenium.Alert
+    import org.openqa.selenium.By
+    import org.openqa.selenium.NoAlertPresentException
+    import org.openqa.selenium.NoSuchElementException
+    import org.openqa.selenium.WebDriver
+    import org.openqa.selenium.firefox.FirefoxDriver
+    import org.openqa.selenium.support.ui.Select
+    import org.testng.annotations.AfterClass
+    import org.testng.annotations.AfterTest
+    import org.testng.annotations.BeforeClass
+    import org.testng.annotations.BeforeTest
+    class TestBase
+      WebDriver driver
+      String baseUrl
+      boolean acceptNextAlert
+      StringBuffer verificationErrors
+      void submitContactCreation()
+      void setUp()
+      void tearDown()
+      void returnToGroupsPage()
+      void submitGroupCreation()
+      void fillGroupForm(GroupData)
+      void initGroupCreation()
+      void gotoGroupsPage()
+      void openMainPage()
+      void openMainPage2()
+      boolean isElementPresent(By)
+      String closeAlertAndGetItsText()
+      void fillAddNewPage(ContactData)
+      void gotoAddNewPage()
+      boolean isAlertPresent()
+  [Working copy] GroupCreationTests.java
+    package com.example.tests
+    import java.util.regex.Pattern
+    import org.testng.annotations.Test
+    class GroupCreationTests
+      void testNonEmptyGroupCreation()
+      void testEmptyGroupCreation()
+  [Working copy] ContactCreationTests.java
+    package com.example.tests
+    import org.testng.annotations.Test
+    class ContactCreationTests
+      void testNonEmptyContactCreation()
+      void testEmptyContactCreation()
+  [Working copy] GroupData.java
+    package com.example.tests
+    class GroupData
+      String name
+      String header
+      String footer
+      GroupData()
+      GroupData(String, String, String)
+  [Working copy] AlsoGroupCreationTests.java
+    package com.example.tests
+    import java.util.regex.Pattern
+    import java.util.concurrent.TimeUnit
+    import org.junit.Assert.*
+    import org.hamcrest.CoreMatchers.*
+    import org.openqa.selenium.*
+    import org.openqa.selenium.firefox.FirefoxDriver
+    import org.openqa.selenium.support.ui.Select
+    import org.testng.annotations.AfterClass
+    import org.testng.annotations.BeforeClass
+    import org.testng.annotations.Test
+    class AlsoGroupCreationTests
+      void testNonEmptyGroupCreation()
+      void testEmptyGroupCreation()
+  [Working copy] ContactData.java
+    package com.example.tests
+    class ContactData
+      String lastname
+      String firstname
+      String mobile
+      String bday_day
+      String bday_month
+      String bday_year
+      ContactData()
+      ContactData(String, String, String, String, String, String)
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 16:39:36.187
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 56242 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse--442942260\testng-customsuite.xml
+java -ea -classpath D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin:C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 56242 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse--442942260\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 16:42:42.518
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com.example.tests [in src [in addressbook-selenium-tests]]
+  [Working copy] TestBase.java
+    package com.example.tests
+    import org.junit.Assert.fail
+    import java.util.concurrent.TimeUnit
+    import org.openqa.selenium.Alert
+    import org.openqa.selenium.By
+    import org.openqa.selenium.NoAlertPresentException
+    import org.openqa.selenium.NoSuchElementException
+    import org.openqa.selenium.WebDriver
+    import org.openqa.selenium.firefox.FirefoxDriver
+    import org.openqa.selenium.support.ui.Select
+    import org.testng.annotations.AfterClass
+    import org.testng.annotations.AfterTest
+    import org.testng.annotations.BeforeClass
+    import org.testng.annotations.BeforeTest
+    class TestBase
+      WebDriver driver
+      String baseUrl
+      boolean acceptNextAlert
+      StringBuffer verificationErrors
+      void submitContactCreation()
+      void setUp()
+      void tearDown()
+      void returnToGroupsPage()
+      void submitGroupCreation()
+      void fillGroupForm(GroupData)
+      void initGroupCreation()
+      void gotoGroupsPage()
+      void openMainPage()
+      void openMainPage2()
+      boolean isElementPresent(By)
+      String closeAlertAndGetItsText()
+      void fillAddNewPage(ContactData)
+      void gotoAddNewPage()
+      boolean isAlertPresent()
+  [Working copy] GroupCreationTests.java
+    package com.example.tests
+    import java.util.regex.Pattern
+    import org.testng.annotations.Test
+    class GroupCreationTests
+      void testNonEmptyGroupCreation()
+      void testEmptyGroupCreation()
+  [Working copy] ContactCreationTests.java
+    package com.example.tests
+    import org.testng.annotations.Test
+    class ContactCreationTests
+      void testNonEmptyContactCreation()
+      void testEmptyContactCreation()
+  [Working copy] GroupData.java
+    package com.example.tests
+    class GroupData
+      String name
+      String header
+      String footer
+      GroupData()
+      GroupData(String, String, String)
+  [Working copy] AlsoGroupCreationTests.java
+    package com.example.tests
+    import java.util.regex.Pattern
+    import java.util.concurrent.TimeUnit
+    import org.junit.Assert.*
+    import org.hamcrest.CoreMatchers.*
+    import org.openqa.selenium.*
+    import org.openqa.selenium.firefox.FirefoxDriver
+    import org.openqa.selenium.support.ui.Select
+    import org.testng.annotations.AfterClass
+    import org.testng.annotations.BeforeClass
+    import org.testng.annotations.Test
+    class AlsoGroupCreationTests
+      void testNonEmptyGroupCreation()
+      void testEmptyGroupCreation()
+  [Working copy] ContactData.java
+    package com.example.tests
+    class ContactData
+      String lastname
+      String firstname
+      String mobile
+      String bday_day
+      String bday_month
+      String bday_year
+      ContactData()
+      ContactData(String, String, String, String, String, String)
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 16:42:48.116
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 56456 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse-822236361\testng-customsuite.xml
+java -ea -classpath D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin:C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 56456 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse-822236361\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 16:49:18.483
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com.example.tests [in src [in addressbook-selenium-tests]]
+  [Working copy] TestBase.java
+    package com.example.tests
+    import org.junit.Assert.fail
+    import java.util.concurrent.TimeUnit
+    import org.openqa.selenium.Alert
+    import org.openqa.selenium.By
+    import org.openqa.selenium.NoAlertPresentException
+    import org.openqa.selenium.NoSuchElementException
+    import org.openqa.selenium.WebDriver
+    import org.openqa.selenium.firefox.FirefoxDriver
+    import org.openqa.selenium.support.ui.Select
+    import org.testng.annotations.AfterClass
+    import org.testng.annotations.AfterTest
+    import org.testng.annotations.BeforeClass
+    import org.testng.annotations.BeforeTest
+    class TestBase
+      WebDriver driver
+      String baseUrl
+      boolean acceptNextAlert
+      StringBuffer verificationErrors
+      void submitContactCreation()
+      void setUp()
+      void tearDown()
+      void returnToGroupsPage()
+      void submitGroupCreation()
+      void fillGroupForm(GroupData)
+      void initGroupCreation()
+      void gotoGroupsPage()
+      void openMainPage()
+      boolean isElementPresent(By)
+      String closeAlertAndGetItsText()
+      void fillAddNewPage(ContactData)
+      void gotoAddNewPage()
+      boolean isAlertPresent()
+  [Working copy] GroupCreationTests.java
+    package com.example.tests
+    import java.util.regex.Pattern
+    import org.testng.annotations.Test
+    class GroupCreationTests
+      void testNonEmptyGroupCreation()
+      void testEmptyGroupCreation()
+  [Working copy] ContactCreationTests.java
+    package com.example.tests
+    import org.testng.annotations.Test
+    class ContactCreationTests
+      void testNonEmptyContactCreation()
+      void testEmptyContactCreation()
+  [Working copy] GroupData.java
+    package com.example.tests
+    class GroupData
+      String name
+      String header
+      String footer
+      GroupData()
+      GroupData(String, String, String)
+  [Working copy] AlsoGroupCreationTests.java
+    package com.example.tests
+    import java.util.regex.Pattern
+    import java.util.concurrent.TimeUnit
+    import org.junit.Assert.*
+    import org.hamcrest.CoreMatchers.*
+    import org.openqa.selenium.*
+    import org.openqa.selenium.firefox.FirefoxDriver
+    import org.openqa.selenium.support.ui.Select
+    import org.testng.annotations.AfterClass
+    import org.testng.annotations.BeforeClass
+    import org.testng.annotations.Test
+    class AlsoGroupCreationTests
+      void testNonEmptyGroupCreation()
+      void testEmptyGroupCreation()
+  [Working copy] ContactData.java
+    package com.example.tests
+    class ContactData
+      String lastname
+      String firstname
+      String mobile
+      String bday_day
+      String bday_month
+      String bday_year
+      ContactData()
+      ContactData(String, String, String, String, String, String)
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 16:49:20.544
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 56683 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse-2010672640\testng-customsuite.xml
+java -ea -classpath D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin:C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 56683 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse-2010672640\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 16:50:15.773
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com.example.tests [in src [in addressbook-selenium-tests]]
+  [Working copy] TestBase.java
+    package com.example.tests
+    import org.junit.Assert.fail
+    import java.util.concurrent.TimeUnit
+    import org.openqa.selenium.Alert
+    import org.openqa.selenium.By
+    import org.openqa.selenium.NoAlertPresentException
+    import org.openqa.selenium.NoSuchElementException
+    import org.openqa.selenium.WebDriver
+    import org.openqa.selenium.firefox.FirefoxDriver
+    import org.openqa.selenium.support.ui.Select
+    import org.testng.annotations.AfterClass
+    import org.testng.annotations.AfterTest
+    import org.testng.annotations.BeforeClass
+    import org.testng.annotations.BeforeTest
+    class TestBase
+      WebDriver driver
+      String baseUrl
+      boolean acceptNextAlert
+      StringBuffer verificationErrors
+      void submitContactCreation()
+      void setUp()
+      void tearDown()
+      void returnToGroupsPage()
+      void submitGroupCreation()
+      void fillGroupForm(GroupData)
+      void initGroupCreation()
+      void gotoGroupsPage()
+      void openMainPage()
+      boolean isElementPresent(By)
+      String closeAlertAndGetItsText()
+      void fillAddNewPage(ContactData)
+      void gotoAddNewPage()
+      boolean isAlertPresent()
+  [Working copy] GroupCreationTests.java
+    package com.example.tests
+    import java.util.regex.Pattern
+    import org.testng.annotations.Test
+    class GroupCreationTests
+      void testNonEmptyGroupCreation()
+      void testEmptyGroupCreation()
+  [Working copy] ContactCreationTests.java
+    package com.example.tests
+    import org.testng.annotations.Test
+    class ContactCreationTests
+      void testNonEmptyContactCreation()
+      void testEmptyContactCreation()
+  [Working copy] GroupData.java
+    package com.example.tests
+    class GroupData
+      String name
+      String header
+      String footer
+      GroupData()
+      GroupData(String, String, String)
+  [Working copy] AlsoGroupCreationTests.java
+    package com.example.tests
+    import java.util.regex.Pattern
+    import java.util.concurrent.TimeUnit
+    import org.junit.Assert.*
+    import org.hamcrest.CoreMatchers.*
+    import org.openqa.selenium.*
+    import org.openqa.selenium.firefox.FirefoxDriver
+    import org.openqa.selenium.support.ui.Select
+    import org.testng.annotations.AfterClass
+    import org.testng.annotations.BeforeClass
+    import org.testng.annotations.Test
+    class AlsoGroupCreationTests
+      void testNonEmptyGroupCreation()
+      void testEmptyGroupCreation()
+  [Working copy] ContactData.java
+    package com.example.tests
+    class ContactData
+      String lastname
+      String firstname
+      String mobile
+      String bday_day
+      String bday_month
+      String bday_year
+      ContactData()
+      ContactData(String, String, String, String, String, String)
+
+!ENTRY org.testng.eclipse 1 0 2015-09-02 16:50:17.164
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 56894 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse--1177848765\testng-customsuite.xml
+java -ea -classpath D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\bin:C:\Users\skrylova\Downloads\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 56894 -d D:\skrylova\tests\test-java-25-spkrylova\addressbook-selenium-tests\test-output C:\Users\skrylova\AppData\Local\Temp\testng-eclipse--1177848765\testng-customsuite.xml

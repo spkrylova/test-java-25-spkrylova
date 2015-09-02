@@ -12,3 +12,17 @@
 1441119958586	Extract local variable 'group'
 1441121737665	Copy compilation unit
 1441122254447	Pull up members to 'TestBase'
+1441182330994	Extract method 'gotoAddNewPage'
+1441182412779	Extract method 'fillContactData'
+1441182525733	Extract method 'submitContactCreation'
+1441183100240	Introduce parameter for 'fillAddNewPage'
+1441183157406	Rename local variable 'firstname'
+1441183173389	Introduce parameter for 'fillAddNewPage'
+1441183220942	Introduce parameter for 'fillAddNewPage'
+1441183247483	Introduce parameter for 'fillAddNewPage'
+1441183273624	Introduce parameter for 'fillAddNewPage'
+1441183295928	Introduce parameter for 'fillAddNewPage'
+1441183867826	Extract method 'openMainPage2'
+1441185617024	Introduce Parameter Object
+1441186093993	Extract local variable 'contact'
+1441197168254	Pull up members to 'TestBase'

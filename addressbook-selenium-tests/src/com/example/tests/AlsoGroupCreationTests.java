@@ -13,12 +13,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 public class AlsoGroupCreationTests extends TestBase{
-  private WebDriver driver;
-  private String baseUrl;
-  private boolean acceptNextAlert = true;
-  private StringBuffer verificationErrors = new StringBuffer();
-
-  
   @Test
   public void testNonEmptyGroupCreation() throws Exception {
 	openMainPage();
