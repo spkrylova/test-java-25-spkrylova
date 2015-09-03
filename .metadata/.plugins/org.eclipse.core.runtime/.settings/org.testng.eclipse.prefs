@@ -1,0 +1,3 @@
+addressbook-selenium-tests.outdir=/test-output
+addressbook-selenium-tests.useProjectJar=true
+eclipse.preferences.version=1

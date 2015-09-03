@@ -1,0 +1,99 @@
+package com.example.fw;
+
+import static org.junit.Assert.fail;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
+
+import com.example.tests.ContactData;
+import com.example.tests.TestBase;
+
+public class ApplicationManager {
+	
+	public static WebDriver driver;
+	public static String baseUrl;
+	public static boolean acceptNextAlert = true;
+	private static StringBuffer verificationErrors = new StringBuffer();
+	
+	public NavigationHelper navogationHelper;
+	public GroupHelper groupHelper;
+	public ContactHelper contactHelper;
+	
+	public ApplicationManager () {
+	    driver = new FirefoxDriver();
+	    baseUrl = "http://localhost/";
+	    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	}
+	
+	public void stop() {
+	    driver.quit();
+	    String verificationErrorString = verificationErrors.toString();
+	    if (!"".equals(verificationErrorString)) {
+	    	
+	      fail(verificationErrorString);
+	    }
+	  }
+	public void submitContactCreation() {
+		driver.findElement(By.name("submit")).click();
+	}
+
+	public void gotoAddNewPage() {
+		driver.findElement(By.linkText("add new")).click();
+	}
+
+	public void fillAddNewPage(TestBase testBase, ContactData contact) {
+		driver.findElement(By.name("firstname")).clear();
+	    driver.findElement(By.name("firstname")).sendKeys(contact.firstname);
+	    driver.findElement(By.name("lastname")).clear();
+	    driver.findElement(By.name("lastname")).sendKeys(contact.lastname);
+	    driver.findElement(By.name("mobile")).clear();
+	    driver.findElement(By.name("mobile")).sendKeys(contact.mobile);
+	    new Select(driver.findElement(By.name("bday"))).selectByVisibleText(contact.bday_day);
+	    new Select(driver.findElement(By.name("bmonth"))).selectByVisibleText(contact.bday_month);
+	    driver.findElement(By.name("byear")).clear();
+	    driver.findElement(By.name("byear")).sendKeys(contact.bday_year);
+	}
+
+	public String closeAlertAndGetItsText() {
+	    try {
+	      Alert alert = driver.switchTo().alert();
+	      String alertText = alert.getText();
+	      if (acceptNextAlert) {
+	        alert.accept();
+	      } else {
+	        alert.dismiss();
+	      }
+	      return alertText;
+	    } finally {
+	      acceptNextAlert = true;
+	    }
+	  }
+
+	public boolean isElementPresent(By by) {
+	    try {
+	      driver.findElement(by);
+	      return true;
+	    } catch (NoSuchElementException e) {
+	      return false;
+	    }
+	  }
+
+	public boolean isAlertPresent() {
+	    try {
+	      ApplicationManager.driver.switchTo().alert();
+	      return true;
+	    } catch (NoAlertPresentException e) {
+	      return false;
+	    }
+	  }
+	
+}
+
+

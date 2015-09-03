@@ -1,0 +1,38 @@
+package com.example.fw;
+
+import org.openqa.selenium.By;
+
+import com.example.tests.TestBase;
+
+public class ApplicationManager {
+
+	public void returnToGroupsPage() {
+	    TestBase.driver.findElement(By.linkText("groups")).click();
+	}
+
+	public void submitGroupCreation() {
+	    TestBase.driver.findElement(By.name("submit")).click();
+	}
+
+	public void initGroupCreation() {
+	    TestBase.driver.findElement(By.name("new")).click();
+	}
+
+	public void gotoGroupsPage() {
+		TestBase.driver.findElement(By.linkText("groups")).click();
+		//returnToGroupsPage();
+	}
+
+	public void openMainPage() {
+	    //driver.get(baseUrl + "/spkrylova/test-java-25-spkrylova");
+	    //driver.get(baseUrl + "/addressbookv4.1.4/group.php");
+	    //driver.findElement(By.linkText("home")).click();
+	    
+	    TestBase.driver.get(TestBase.baseUrl + "/addressbookv4.1.4/");
+	    TestBase.driver.findElement(By.linkText("home")).click();
+	    
+	    
+	
+	}
+
+}

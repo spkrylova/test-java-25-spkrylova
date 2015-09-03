@@ -1,0 +1,33 @@
+package com.example.fw;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.Select;
+
+import com.example.tests.ContactData;
+import com.example.tests.TestBase;
+
+public class ContactHelper extends HelperBase{
+
+	public ContactHelper(ApplicationManager manager) {
+		super(manager);
+	}
+
+	public void submitContactCreation() {
+		click(By.name("submit"));
+	}
+
+
+	public void fillAddNewContactPage(ContactData contact) {
+		type(By.name("firstname"), contact.firstname);
+
+		driver.findElement(By.name("lastname")).clear();
+		driver.findElement(By.name("lastname")).sendKeys(contact.lastname);
+		driver.findElement(By.name("mobile")).clear();
+		driver.findElement(By.name("mobile")).sendKeys(contact.mobile);
+	    new Select(driver.findElement(By.name("bday"))).selectByVisibleText(contact.bday_day);
+	    new Select(driver.findElement(By.name("bmonth"))).selectByVisibleText(contact.bday_month);
+	    driver.findElement(By.name("byear")).clear();
+	    driver.findElement(By.name("byear")).sendKeys(contact.bday_year);
+	}
+
+}

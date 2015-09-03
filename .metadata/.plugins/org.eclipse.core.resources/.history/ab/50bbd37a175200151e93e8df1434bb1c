@@ -1,0 +1,38 @@
+package com.example.fw;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoAlertPresentException;
+
+import com.example.tests.GroupData;
+import com.example.tests.TestBase;
+
+public class GroupHelper extends HelperBase {
+
+	public GroupHelper(ApplicationManager manager) {
+		super(manager);
+	}
+
+	public void initGroupCreation() {
+	    manager.driver.findElement(By.name("new")).click();
+	}
+
+	public void fillGroupForm(GroupData group) {
+	    manager.driver.findElement(By.name("group_name")).clear();
+	    manager.driver.findElement(By.name("group_name")).sendKeys(group.name);
+	    manager.driver.findElement(By.name("group_header")).clear();
+	    manager.driver.findElement(By.name("group_header")).sendKeys(group.header);
+	    manager.driver.findElement(By.name("group_footer")).clear();
+	    manager.driver.findElement(By.name("group_footer")).sendKeys(group.footer);
+	}
+
+
+
+	public void returnToGroupsPage() {
+	    manager.driver.findElement(By.linkText("groups")).click();
+	}
+
+	public void submitGroupCreation() {
+	    manager.driver.findElement(By.name("submit")).click();
+	}
+
+}

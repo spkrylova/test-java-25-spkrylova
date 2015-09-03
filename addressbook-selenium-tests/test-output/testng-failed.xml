@@ -7,7 +7,8 @@
         <methods>
           <include name="testEmptyContactCreation"/>
           <include name="setUp"/>
-          <include name="submitContactCreation"/>
+          <include name="tearDown"/>
+          <include name="testNonEmptyContactCreation"/>
         </methods>
       </class> <!-- com.example.tests.ContactCreationTests -->
     </classes>

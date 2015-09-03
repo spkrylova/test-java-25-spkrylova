@@ -1,51 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18758" started-at="2015-09-02T13:50:18Z" finished-at="2015-09-02T13:50:36Z">
+  <suite name="Default suite" duration-ms="9368" started-at="2015-09-03T14:38:06Z" finished-at="2015-09-03T14:38:15Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18758" started-at="2015-09-02T13:50:18Z" finished-at="2015-09-02T13:50:36Z">
-      <class name="com.example.tests.TestBase">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.tests.TestBase@629f0666]" name="setUp" is-config="true" duration-ms="5550" started-at="2015-09-02T16:50:18Z" finished-at="2015-09-02T16:50:23Z">
+    <test name="Default test" duration-ms="9368" started-at="2015-09-03T14:38:06Z" finished-at="2015-09-03T14:38:15Z">
+      <class name="com.example.tests.GroupModificationTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.tests.GroupModificationTests@5b1d2887]" name="setUp" is-config="true" duration-ms="6754" started-at="2015-09-03T17:38:06Z" finished-at="2015-09-03T17:38:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.TestBase@629f0666]" name="tearDown" is-config="true" duration-ms="493" started-at="2015-09-02T16:50:36Z" finished-at="2015-09-02T16:50:36Z">
+        <test-method status="PASS" signature="modifySomeGroup()[pri:0, instance:com.example.tests.GroupModificationTests@5b1d2887]" name="modifySomeGroup" duration-ms="1993" started-at="2015-09-03T17:38:13Z" finished-at="2015-09-03T17:38:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modifySomeGroup -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.GroupModificationTests@5b1d2887]" name="tearDown" is-config="true" duration-ms="600" started-at="2015-09-03T17:38:15Z" finished-at="2015-09-03T17:38:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.example.tests.TestBase -->
-      <class name="com.example.tests.ContactCreationTests">
-        <test-method status="PASS" signature="testEmptyContactCreation()[pri:0, instance:com.example.tests.ContactCreationTests@2ac1fdc4]" name="testEmptyContactCreation" duration-ms="1926" started-at="2015-09-02T16:50:32Z" finished-at="2015-09-02T16:50:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testEmptyContactCreation -->
-        <test-method status="PASS" signature="testNonEmptyContactCreation()[pri:0, instance:com.example.tests.ContactCreationTests@2ac1fdc4]" name="testNonEmptyContactCreation" duration-ms="2228" started-at="2015-09-02T16:50:34Z" finished-at="2015-09-02T16:50:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testNonEmptyContactCreation -->
-      </class> <!-- com.example.tests.ContactCreationTests -->
-      <class name="com.example.tests.AlsoGroupCreationTests">
-        <test-method status="PASS" signature="testEmptyGroupCreation()[pri:0, instance:com.example.tests.AlsoGroupCreationTests@c39f790]" name="testEmptyGroupCreation" duration-ms="2231" started-at="2015-09-02T16:50:23Z" finished-at="2015-09-02T16:50:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testEmptyGroupCreation -->
-        <test-method status="PASS" signature="testNonEmptyGroupCreation()[pri:0, instance:com.example.tests.AlsoGroupCreationTests@c39f790]" name="testNonEmptyGroupCreation" duration-ms="2150" started-at="2015-09-02T16:50:25Z" finished-at="2015-09-02T16:50:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testNonEmptyGroupCreation -->
-      </class> <!-- com.example.tests.AlsoGroupCreationTests -->
-      <class name="com.example.tests.GroupCreationTests">
-        <test-method status="PASS" signature="testEmptyGroupCreation()[pri:0, instance:com.example.tests.GroupCreationTests@71e7a66b]" name="testEmptyGroupCreation" duration-ms="1888" started-at="2015-09-02T16:50:28Z" finished-at="2015-09-02T16:50:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testEmptyGroupCreation -->
-        <test-method status="PASS" signature="testNonEmptyGroupCreation()[pri:0, instance:com.example.tests.GroupCreationTests@71e7a66b]" name="testNonEmptyGroupCreation" duration-ms="2261" started-at="2015-09-02T16:50:29Z" finished-at="2015-09-02T16:50:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testNonEmptyGroupCreation -->
-      </class> <!-- com.example.tests.GroupCreationTests -->
+      </class> <!-- com.example.tests.GroupModificationTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

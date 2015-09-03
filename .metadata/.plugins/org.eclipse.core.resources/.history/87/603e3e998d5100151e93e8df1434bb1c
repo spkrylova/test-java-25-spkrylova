@@ -1,0 +1,26 @@
+package com.example.fw;
+
+import static org.junit.Assert.fail;
+
+import org.openqa.selenium.By;
+import org.testng.annotations.AfterTest;
+
+import com.example.tests.TestBase;
+
+public class ApplicationManager {
+
+	public void submitContactCreation() {
+		TestBase.driver.findElement(By.name("submit")).click();
+	}
+
+	@AfterTest
+	public void tearDown() throws Exception {
+	    TestBase.driver.quit();
+	    String verificationErrorString = TestBase.verificationErrors.toString();
+	    if (!"".equals(verificationErrorString)) {
+	    	
+	      fail(verificationErrorString);
+	    }
+	  }
+
+}

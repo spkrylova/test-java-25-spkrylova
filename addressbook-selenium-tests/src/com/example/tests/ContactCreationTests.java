@@ -5,8 +5,8 @@ import org.testng.annotations.Test;
 public class ContactCreationTests extends TestBase{
   @Test
 public void testNonEmptyContactCreation()  throws Exception {
-    openMainPage ();
-    gotoAddNewPage();
+    app.getNavigationHelper().openMainPage ();
+    app.getNavigationHelper().gotoAddNewContactPage();
     ContactData contact = new ContactData();
     contact.firstname = "John";
     contact.lastname = "Smith";
@@ -14,16 +14,16 @@ public void testNonEmptyContactCreation()  throws Exception {
     contact.bday_day = "13";
     contact.bday_month = "February";
     contact.bday_year = "1960";
-	fillAddNewPage(contact);
-    submitContactCreation();
+	app.getContactHelper().fillAddNewContactPage(contact);
+	app.getContactHelper().submitContactCreation();
  }
   
   @Test
 public void testEmptyContactCreation()  throws Exception {
-    openMainPage ();
-    gotoAddNewPage();
+	app.getNavigationHelper().openMainPage ();
+	app.getNavigationHelper().gotoAddNewContactPage();
     ContactData contact = new ContactData();
-	fillAddNewPage(contact);
-    submitContactCreation();
+    app.getContactHelper().fillAddNewContactPage(contact);
+    app.getContactHelper().submitContactCreation();
   }
 }

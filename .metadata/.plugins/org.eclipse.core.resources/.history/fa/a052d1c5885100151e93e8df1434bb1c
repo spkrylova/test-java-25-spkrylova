@@ -1,0 +1,29 @@
+package com.example.tests;
+
+import org.openqa.selenium.By;
+
+public class GroupData {
+	public String name;
+	public String header;
+	public String footer;
+	
+	
+	public GroupData() {
+		
+	}
+
+	public GroupData(String groupname, String header, String footer) {
+		this.name = groupname;
+		this.header = header;
+		this.footer = footer;
+	}
+
+	protected void fillGroupForm(TestBase testBase) {
+	    TestBase.driver.findElement(By.name("group_name")).clear();
+	    TestBase.driver.findElement(By.name("group_name")).sendKeys(name);
+	    TestBase.driver.findElement(By.name("group_header")).clear();
+	    TestBase.driver.findElement(By.name("group_header")).sendKeys(header);
+	    TestBase.driver.findElement(By.name("group_footer")).clear();
+	    TestBase.driver.findElement(By.name("group_footer")).sendKeys(footer);
+	}
+}

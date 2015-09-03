@@ -1,0 +1,99 @@
+package com.example.fw;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.support.ui.Select;
+
+import com.example.tests.ContactData;
+import com.example.tests.GroupData;
+import com.example.tests.TestBase;
+
+public class ApplicationManager {
+
+	public void returnToGroupsPage() {
+	    TestBase.driver.findElement(By.linkText("groups")).click();
+	}
+
+	public void submitGroupCreation() {
+	    TestBase.driver.findElement(By.name("submit")).click();
+	}
+
+	public void initGroupCreation() {
+	    TestBase.driver.findElement(By.name("new")).click();
+	}
+
+	public void gotoGroupsPage() {
+		TestBase.driver.findElement(By.linkText("groups")).click();
+		//returnToGroupsPage();
+	}
+
+	public void openMainPage() {
+	    //driver.get(baseUrl + "/spkrylova/test-java-25-spkrylova");
+	    //driver.get(baseUrl + "/addressbookv4.1.4/group.php");
+	    //driver.findElement(By.linkText("home")).click();
+	    
+	    TestBase.driver.get(TestBase.baseUrl + "/addressbookv4.1.4/");
+	    TestBase.driver.findElement(By.linkText("home")).click();
+	    
+	    
+	
+	}
+
+	public boolean isElementPresent(By by) {
+	    try {
+	      TestBase.driver.findElement(by);
+	      return true;
+	    } catch (NoSuchElementException e) {
+	      return false;
+	    }
+	  }
+
+	public String closeAlertAndGetItsText() {
+	    try {
+	      Alert alert = TestBase.driver.switchTo().alert();
+	      String alertText = alert.getText();
+	      if (TestBase.acceptNextAlert) {
+	        alert.accept();
+	      } else {
+	        alert.dismiss();
+	      }
+	      return alertText;
+	    } finally {
+	      TestBase.acceptNextAlert = true;
+	    }
+	  }
+
+	public boolean isAlertPresent() {
+	    try {
+	      TestBase.driver.switchTo().alert();
+	      return true;
+	    } catch (NoAlertPresentException e) {
+	      return false;
+	    }
+	  }
+
+	public void fillGroupForm(TestBase testBase, GroupData group) {
+	    TestBase.driver.findElement(By.name("group_name")).clear();
+	    TestBase.driver.findElement(By.name("group_name")).sendKeys(group.name);
+	    TestBase.driver.findElement(By.name("group_header")).clear();
+	    TestBase.driver.findElement(By.name("group_header")).sendKeys(group.header);
+	    TestBase.driver.findElement(By.name("group_footer")).clear();
+	    TestBase.driver.findElement(By.name("group_footer")).sendKeys(group.footer);
+	}
+
+	public void fillAddNewPage(TestBase testBase, ContactData contact) {
+		TestBase.driver.findElement(By.name("firstname")).clear();
+	    TestBase.driver.findElement(By.name("firstname")).sendKeys(contact.firstname);
+	    TestBase.driver.findElement(By.name("lastname")).clear();
+	    TestBase.driver.findElement(By.name("lastname")).sendKeys(contact.lastname);
+	    TestBase.driver.findElement(By.name("mobile")).clear();
+	    TestBase.driver.findElement(By.name("mobile")).sendKeys(contact.mobile);
+	    new Select(TestBase.driver.findElement(By.name("bday"))).selectByVisibleText(contact.bday_day);
+	    new Select(TestBase.driver.findElement(By.name("bmonth"))).selectByVisibleText(contact.bday_month);
+	    TestBase.driver.findElement(By.name("byear")).clear();
+	    TestBase.driver.findElement(By.name("byear")).sendKeys(contact.bday_year);
+	}
+
+}
