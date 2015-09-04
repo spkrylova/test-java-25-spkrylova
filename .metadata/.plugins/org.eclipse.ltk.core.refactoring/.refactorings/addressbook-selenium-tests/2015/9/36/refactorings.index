@@ -81,3 +81,4 @@
 1441279317495	Inline local variable 'text'
 1441288562309	Rename type 'ModificationTests'
 1441289449278	Extract method 'selectGroupByIndex'
+1441353018306	Copy compilation unit

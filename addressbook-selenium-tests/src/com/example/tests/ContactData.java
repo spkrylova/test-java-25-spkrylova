@@ -10,8 +10,6 @@ public class ContactData {
 	
 	public ContactData() {
 
-		this.bday_day = "-";
-		this.bday_month = "-";
 		
 	}
 

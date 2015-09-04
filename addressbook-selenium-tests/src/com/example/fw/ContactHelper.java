@@ -21,11 +21,38 @@ public class ContactHelper extends HelperBase{
 		type(By.name("firstname"), contact.firstname);
 		type(By.name("lastname"), contact.lastname);
 		type(By.name("mobile"), contact.mobile);
-	    selectByText(By.name("bday"), contact.bday_day);
-	    selectByText(By.name("bmonth"), contact.bday_month);
+		if (contact.bday_day != null) {
+			selectByText(By.name("bday"), contact.bday_day);	
+		}
+		if (contact.bday_month !=null) {
+	   	    selectByText(By.name("bmonth"), contact.bday_month);			
+		}
+
 	    type(By.name("byear"), contact.bday_year);
 	}
 
+	
+	public void selectContactByIndex(int index) {
+		click(By.xpath("//input[@name='selected[]'][" + index + "]"));
+	}
 
+	public void editContact() {
+		click(By.cssSelector("img[alt=\"Edit\"]"));
+	}
+	
+	public void deleteContact() {
+		click(By.xpath("(//input[@name='update'])[2]"));
+		
+	}
+
+	public void initContactModification(int index) {
+		selectContactByIndex(index);
+		editContact();
+		
+	}
+
+	public void submitContactModication() {
+		click(By.name("update"));
+	}
 
 }
