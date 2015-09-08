@@ -12,8 +12,11 @@
 hs_err_pid*
 
 #excluded based on tutor's recommendations
-.metadata\*.*
-.recommenders\*.*
-RemoteSystemsTempFiles\*.*
-addressbook-selenium-tests\.settings\*.*
-addressbook-selenium-tests\test-output\*.*
+.metadata\**
+.metadata/**
+.metadata*
+.metadata/
+.recommenders/
+RemoteSystemsTempFiles\
+addressbook-selenium-tests\.settings\
+addressbook-selenium-tests\test-output\
