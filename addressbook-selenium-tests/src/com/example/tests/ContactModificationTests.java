@@ -16,6 +16,7 @@ public class ContactModificationTests extends TestBase{
 		
 	    //save old state
 	    List<ContactData> oldList = app.getContactHelper().getContacts();
+	    
 	    Random rnd = new Random();
 	    int index = rnd.nextInt(oldList.size()-1);
 	   
@@ -25,7 +26,7 @@ public class ContactModificationTests extends TestBase{
 		app.getContactHelper().submitContactModication();
 		app.getNavigationHelper().goToMainPage();
 		
-		//save new state
+		//save new state 
 	    List<ContactData> newList = app.getContactHelper().getContacts();
 	    
 	    //compare states

@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 import com.example.tests.ContactData;
-import com.example.tests.GroupData;
+
 
 
 public class ContactHelper extends HelperBase{
@@ -84,14 +84,23 @@ public class ContactHelper extends HelperBase{
 
 
 	
+	private List<WebElement> getContactRows() {
+		List<WebElement> contactRows = driver.findElements(By.xpath ("//tr"));
+		contactRows.remove(0);
+		int i = contactRows.size();
+		contactRows.remove(i-1);
+		return contactRows;
+	}
+	
 	public List<ContactData> getContacts() {
 		List<ContactData> contacts = new ArrayList<ContactData>();
-		List<WebElement> checkBoxes = driver.findElements(By.name ("selected[]"));
-		for (WebElement checkBox : checkBoxes) {
-			ContactData contact = new ContactData();
-			String title = checkBox.getAttribute("title");
-			contact.first_and_last_name =title.substring("Select (".length(), title.length()-")".length());			
-			contacts.add(contact);
+		List<WebElement> contactRows =  getContactRows();
+		for (WebElement row: contactRows) {
+	        ContactData contact = new ContactData();
+	        contact.firstname = row.findElement(By.xpath(".//td[3]")).getText();
+	        contact.lastname  = row.findElement(By.xpath(".//td[2]")).getText();
+		    fillFirstAndLastName(contact);
+		    contacts.add (contact);
 		}
 		
 		return contacts;
