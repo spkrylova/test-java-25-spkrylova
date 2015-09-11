@@ -7,21 +7,23 @@ import java.util.List;
 
 import org.testng.annotations.Test;
 
+import com.example.fw.ContactHelper;
+import static com.example.fw.ContactHelper.CREATION;
 public class ContactCreationTests extends TestBase{
 	
 
   @Test (dataProvider = "randomValidContactGenerator")
 public void testContactCreationWithValidData(ContactData contact)  throws Exception {
-    app.getNavigationHelper().openMainPage ();
+    app.navigateTo().mainPage ();
     
     //save old state
     List<ContactData> oldList = app.getContactHelper().getContacts();
    
     //actions
-    app.getNavigationHelper().gotoAddNewContactPage();
-	app.getContactHelper().fillAddNewContactPage(contact);
+    app.navigateTo().gotoAddNewContactPage();
+	app.getContactHelper().fillAddNewContactPage(contact, true);
 	app.getContactHelper().submitContactCreation();
-	app.getNavigationHelper().goToMainPage();
+	app.navigateTo().goToMainPage();
 	
     //save new state
     List<ContactData> newList = app.getContactHelper().getContacts();
@@ -36,19 +38,19 @@ public void testContactCreationWithValidData(ContactData contact)  throws Except
   
   //@Test
 public void testEmptyContactCreation()  throws Exception {
-	app.getNavigationHelper().openMainPage ();
+	app.navigateTo().mainPage ();
 	
     //save old state
     List<ContactData> oldList = app.getContactHelper().getContacts();
    
     //actions
-	app.getNavigationHelper().gotoAddNewContactPage();
+	app.navigateTo().gotoAddNewContactPage();
     ContactData contact = new ContactData();
     contact.firstname = "";
     contact.lastname = "";
-    app.getContactHelper().fillAddNewContactPage(contact);
+    app.getContactHelper().fillAddNewContactPage(contact, ContactHelper.CREATION);
     app.getContactHelper().submitContactCreation();
-    app.getNavigationHelper().goToMainPage();
+    app.navigateTo().goToMainPage();
     
     //save new state
     List<ContactData> newList = app.getContactHelper().getContacts();

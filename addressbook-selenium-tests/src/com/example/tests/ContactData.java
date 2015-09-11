@@ -23,6 +23,8 @@ public class ContactData implements Comparable <ContactData>{
 		this.bday_month = bday_month;
 		this.bday_year = bday_year;
 	}
+	
+
 
 	@Override
 	public int compareTo(ContactData other) {

@@ -17,18 +17,14 @@ public class GroupCreationTests extends TestBase {
 
   @Test (dataProvider = "randomValidGroupGenerator")
   public void testGroupCreationWithValidData(GroupData group) throws Exception {
-	app.getNavigationHelper().openMainPage();
-    app.getNavigationHelper().gotoGroupsPage();
+	//app.navigateTo().mainPage();
+    //app.navigateTo().groupsPage();
     
     //save old state
     List<GroupData> oldList = app.getGroupHelper().getGroups();
     
     //actions
-    app.getGroupHelper().initGroupCreation();
-
-    app.getGroupHelper().fillGroupForm(group);
-    app.getGroupHelper().submitGroupCreation();
-    app.getGroupHelper().returnToGroupsPage();
+    app.getGroupHelper().createGroup(group);
     
     //save new state
     List<GroupData> newList = app.getGroupHelper().getGroups();
@@ -39,29 +35,7 @@ public class GroupCreationTests extends TestBase {
     assertEquals (newList, oldList);
   }
   
-  //@Test
-  public void testEmptyGroupCreation() throws Exception {
-	app.getNavigationHelper().openMainPage();
-	app.getNavigationHelper().gotoGroupsPage();
-	
-	//save old state
-	List<GroupData> oldList = app.getGroupHelper().getGroups();
-	
-	//actions
-	GroupData group = new GroupData("", "", "");
-	app.getGroupHelper().initGroupCreation();
-	app.getGroupHelper().fillGroupForm(group);
-	app.getGroupHelper().submitGroupCreation();
-	app.getGroupHelper().returnToGroupsPage();
-	
-	//save new state
-	List<GroupData> newList = app.getGroupHelper().getGroups();
-	    
-	//compare states
-	oldList.add (group);
-	Collections.sort(oldList);
-	assertEquals (newList, oldList);
-  }
+  
   
 
 }

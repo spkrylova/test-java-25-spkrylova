@@ -8,13 +8,13 @@ public class NavigationHelper extends HelperBase {
 		super(manager);
 	}
 
-	public void openMainPage() {
+	public void mainPage() {
 	    
 	    driver.get(manager.baseUrl + "/addressbookv4.1.4/");
 	    driver.findElement(By.linkText("home")).click();   
 	}
 
-	public void gotoGroupsPage() {
+	public void groupsPage() {
 		click(By.linkText("groups"));
 		//returnToGroupsPage();
 	}

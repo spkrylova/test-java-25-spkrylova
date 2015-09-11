@@ -12,6 +12,8 @@ import com.example.tests.ContactData;
 
 
 public class ContactHelper extends HelperBase{
+	public static boolean CREATION = true;
+	public static boolean MODIFICATION = false;
 
 	public ContactHelper(ApplicationManager manager) {
 		super(manager);
@@ -22,7 +24,7 @@ public class ContactHelper extends HelperBase{
 	}
 
 
-	public void fillAddNewContactPage(ContactData contact) {
+	public void fillAddNewContactPage(ContactData contact, boolean formType) {
 		type(By.name("firstname"), contact.firstname);
 		type(By.name("lastname"), contact.lastname);
 		type(By.name("mobile"), contact.mobile);
@@ -34,6 +36,11 @@ public class ContactHelper extends HelperBase{
 		}
 
 	    type(By.name("byear"), contact.bday_year);
+	    if (formType == CREATION) {
+	    	
+	    } else {
+	    	
+	    }
 	}
 
 	public void fillFirstAndLastName(ContactData contact) {
@@ -105,4 +112,6 @@ public class ContactHelper extends HelperBase{
 		
 		return contacts;
 	}
+
+
 }
