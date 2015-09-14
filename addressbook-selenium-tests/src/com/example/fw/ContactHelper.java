@@ -25,7 +25,6 @@ public class ContactHelper extends HelperBase{
 
 
 public ContactHelper createContact(ContactData contact) {
-	//manager.navigateTo().goToMainPage();
 	manager.navigateTo().gotoAddNewContactPage();
     fillAddNewContactPage(contact, CREATION);
     submitContactCreation();
@@ -75,17 +74,6 @@ public ContactHelper modifyContact(int index, ContactData contact) {
 	    }
 	    return this;
 	}
-/*
-	public void fillFirstAndLastName(ContactData contact) {
-		contact.first_and_last_name =" ";
-		if (contact.getFirstname() != null) {
-			contact.first_and_last_name = contact.getFirstname() + " ";
-		}
-		if (contact.getLastname() != null) {
-			contact.first_and_last_name = contact.first_and_last_name + contact.getLastname();
-		}
-		return;
-	} */   
 	
 	public void selectContactByIndex(int index) {
 		click(By.xpath("//input[@name='selected[]'][" + (index+1) + "]"));

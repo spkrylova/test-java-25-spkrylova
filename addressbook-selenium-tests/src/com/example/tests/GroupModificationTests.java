@@ -10,9 +10,9 @@ public class GroupModificationTests extends TestBase{
 
 	@Test (dataProvider = "randomValidGroupGenerator")
 	public void modifySomeGroup(GroupData group) {
-		//save old state
-		
+		//save old state		
 	    SortedListOf<GroupData> oldList = app.getGroupHelper().getGroups();
+	    
 	    Random rnd = new Random();
 	    int index = rnd.nextInt(oldList.size()-1);
 		  
