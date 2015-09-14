@@ -12,7 +12,6 @@ public abstract class HelperBase {
 	
   protected ApplicationManager manager;
   protected WebDriver driver;
-  //private WebDriver driver;
   private boolean acceptNextAlert;
  
   public HelperBase(ApplicationManager manager) {

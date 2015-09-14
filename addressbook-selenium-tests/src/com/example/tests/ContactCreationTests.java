@@ -14,52 +14,21 @@ public class ContactCreationTests extends TestBase{
 
   @Test (dataProvider = "randomValidContactGenerator")
 public void testContactCreationWithValidData(ContactData contact)  throws Exception {
-    app.navigateTo().mainPage ();
     
     //save old state
     List<ContactData> oldList = app.getContactHelper().getContacts();
    
     //actions
-    app.navigateTo().gotoAddNewContactPage();
-	app.getContactHelper().fillAddNewContactPage(contact, true);
-	app.getContactHelper().submitContactCreation();
-	app.navigateTo().goToMainPage();
+    app.getContactHelper().createContact (contact);
 	
     //save new state
     List<ContactData> newList = app.getContactHelper().getContacts();
     
     //compare states
-    app.getContactHelper().fillFirstAndLastName(contact);
     oldList.add (contact);
     Collections.sort(oldList);
     Collections.sort(newList);
     assertEquals (newList, oldList);
  }
   
-  //@Test
-public void testEmptyContactCreation()  throws Exception {
-	app.navigateTo().mainPage ();
-	
-    //save old state
-    List<ContactData> oldList = app.getContactHelper().getContacts();
-   
-    //actions
-	app.navigateTo().gotoAddNewContactPage();
-    ContactData contact = new ContactData();
-    contact.firstname = "";
-    contact.lastname = "";
-    app.getContactHelper().fillAddNewContactPage(contact, ContactHelper.CREATION);
-    app.getContactHelper().submitContactCreation();
-    app.navigateTo().goToMainPage();
-    
-    //save new state
-    List<ContactData> newList = app.getContactHelper().getContacts();
-    
-    //compare states
-    app.getContactHelper().fillFirstAndLastName(contact);
-    oldList.add (contact);
-    Collections.sort(oldList);
-    Collections.sort(newList);
-    assertEquals (newList, oldList);
-  }
 }

@@ -10,21 +10,41 @@ public class NavigationHelper extends HelperBase {
 
 	public void mainPage() {
 	    
-	    driver.get(manager.baseUrl + "/addressbookv4.1.4/");
+	   //driver.get(manager.baseUrl + "/addressbookv4.1.4/");
 	    driver.findElement(By.linkText("home")).click();   
 	}
 
 	public void groupsPage() {
+	   if (! onGroupsPage()){	
 		click(By.linkText("groups"));
-		//returnToGroupsPage();
+	   }
 	}
 	
 	public void gotoAddNewContactPage() {
-		click(By.linkText("add new"));
+		if (! onAddNewContactPage() ) {
+			click(By.linkText("add new"));	
+		}
+
 	}
 	
 	public void goToMainPage() {
-		click(By.linkText("home"));
-	}	
+		if (! onMainPage()) {
+			click(By.linkText("home"));			
+		}
 
+	}
+
+	private boolean onMainPage() {
+		return driver.findElements(By.id("maintable")).size() > 0;
+
+	}
+
+	private boolean onGroupsPage() {
+		return (driver.getCurrentUrl().contains("/group.php") && (driver.findElements(By.name("new")).size() >0));
+	}	
+	
+	
+	private boolean onAddNewContactPage() {
+		return (driver.getCurrentUrl().equals("http://localhost/addressbookv4.1.4/edit.php"));
+	}
 }

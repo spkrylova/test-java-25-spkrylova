@@ -22,18 +22,12 @@ public class ContactModificationTests extends TestBase{
 	    int index = rnd.nextInt(oldList.size()-1);
 	   
 	    //actions
-
-		app.getContactHelper().initContactModification(index);  
-		app.getContactHelper().fillAddNewContactPage(contact, MODIFICATION);
-		app.getContactHelper().submitContactModication();
-		app.navigateTo().goToMainPage();
-		
+	    app.getContactHelper().modifyContact(index, contact);
+	
 		//save new state 
 	    List<ContactData> newList = app.getContactHelper().getContacts();
 	    
-	    //compare states
-	    app.getContactHelper().fillFirstAndLastName(contact);
-	    
+	    //compare states  
 	    oldList.remove(index);
 	    oldList.add (contact);
 	    Collections.sort(oldList);
