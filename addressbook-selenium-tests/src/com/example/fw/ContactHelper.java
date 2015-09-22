@@ -59,14 +59,14 @@ public ContactHelper modifyContact(int index, ContactData contact) {
 		type(By.name("firstname"), contact.getFirstname());
 		type(By.name("lastname"), contact.getLastname());
 		type(By.name("mobile"), contact.getMobile());
-		if (contact.bday_day != null) {
-			selectByText(By.name("bday"), contact.bday_day);	
+		if (contact.getBday_day() != null) {
+			selectByText(By.name("bday"),contact.getBday_day());	
 		}
-		if (contact.bday_month !=null) {
-	   	    selectByText(By.name("bmonth"), contact.bday_month);			
+		if (contact.getBday_month() !=null) {
+	   	    selectByText(By.name("bmonth"), contact.getBday_month());			
 		}
 
-	    type(By.name("byear"), contact.bday_year);
+	    type(By.name("byear"), contact.getBday_year());
 	    if (formType == CREATION) {
 	    	
 	    } else {

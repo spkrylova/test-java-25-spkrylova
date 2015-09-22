@@ -4,12 +4,10 @@ public class ContactData implements Comparable <ContactData>{
 	private String lastname;
 	private String firstname;
 	private String mobile;
-	public String bday_day;
-	public String bday_month;
-	public String bday_year;
-	
+	private String bday_day;
+	private String bday_month;
+	private String bday_year;	
 	public ContactData() {
-
 		
 	}
 
@@ -23,8 +21,6 @@ public class ContactData implements Comparable <ContactData>{
 		this.bday_year = bday_year;
 	}
 	
-
-
 	@Override
 	public int compareTo(ContactData other) {
 		int result;
@@ -35,10 +31,7 @@ public class ContactData implements Comparable <ContactData>{
 		
 		return result;
 
-	}
-	
-	
-	
+	}	
 
 	@Override
 	public String toString() {
@@ -113,7 +106,5 @@ public class ContactData implements Comparable <ContactData>{
 	public String getBday_year() {
 		return bday_year;
 	}
-
-
 	
 }
