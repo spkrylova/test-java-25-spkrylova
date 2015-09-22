@@ -17,7 +17,8 @@ public class GroupCreationTests extends TestBase {
 
 	@DataProvider	
 	public Iterator<Object[]>	groupsFromFile() throws IOException {
-		return wrapGroupsForDataProvider (loadGroupsFromXmlFile(new File("groups.xml"))).iterator();
+		//return wrapGroupsForDataProvider (loadGroupsFromXmlFile(new File("groups.xml"))).iterator();
+		return wrapGroupsForDataProvider (loadGroupsFromCsvFile(new File("groups.txt"))).iterator();
 
 	}
 
@@ -33,7 +34,6 @@ public class GroupCreationTests extends TestBase {
 	public void testGroupCreationWithValidData(GroupData group) throws Exception {
 		//save old state
 		SortedListOf<GroupData> oldList = app.getGroupHelper().getGroups();
-		System.out.println ("oldList = " + oldList); 
 
 		//actions
 		app.getGroupHelper().createGroup(group);

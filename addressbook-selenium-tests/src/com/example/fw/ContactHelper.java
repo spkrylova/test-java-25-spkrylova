@@ -137,7 +137,6 @@ public ContactHelper modifyContact(int index, ContactData contact) {
 			        contact
 			              .withFirstName(row.findElement(By.xpath(".//td[3]")).getText())
 			              .withLastName( row.findElement(By.xpath(".//td[2]")).getText());
-			        //fillFirstAndLastName(contact);
 					System.out.println ("Cache will be updated");
 					cachedContacts.add(contact);
 

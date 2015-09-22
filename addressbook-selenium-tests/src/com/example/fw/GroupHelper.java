@@ -26,7 +26,6 @@ public class GroupHelper extends HelperBase {
 
 	
 	private void rebuildCache() {
-		        System.out.println ("Cache will be updated");
 				cachedGroups = new SortedListOf<GroupData>();				
 				manager.navigateTo().groupsPage();
 				List<WebElement> checkBoxes = driver.findElements(By.name ("selected[]"));

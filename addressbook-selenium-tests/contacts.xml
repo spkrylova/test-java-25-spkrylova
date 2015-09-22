@@ -1,0 +1,17 @@
+<list>
+  <Contact>
+    <lastname>lastname 1</lastname>
+    <firstname>firstname1</firstname>
+    <mobile>+79217654321</mobile>
+  </Contact>
+  <Contact>
+    <lastname></lastname>
+    <firstname>test1043506470</firstname>
+    <mobile>test-1423756931</mobile>
+  </Contact>
+  <Contact>
+    <lastname>test-625633053</lastname>
+    <firstname>test1173348558</firstname>
+    <mobile>test1597152625</mobile>
+  </Contact>
+</list>
