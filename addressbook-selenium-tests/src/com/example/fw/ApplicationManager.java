@@ -28,7 +28,7 @@ public class ApplicationManager {
 		} else {if (browser.equals("ie")) {
 			File file = new File("C:/Users/skrylova/Downloads/IEDriverServer.exe");
 			System.setProperty("webdriver.ie.driver", file.getAbsolutePath());
-			WebDriver driver = new InternetExplorerDriver();
+			driver = new InternetExplorerDriver();
 		} else {
 			throw new Error ("Unsupported browser: " + browser);
 		}
